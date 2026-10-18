@@ -1,2 +1,53 @@
-# CrosslinkingDegree
-Predicting degree of crosslinking of crosslinked polyamide membranes.
+# 1. Extract Data
+
+`tar -xzvf Data.tar.gz`
+
+# 2. Analyze existing topology
+
+Topology is provided only when DP > 0.5, 
+
+`python3 analyze_topology.py`
+
+Generate results and analysis in `topology_results/`.
+
+The most important output is `topology_results/systems.csv`
+
+# 3. Train Feed-Forward Neural Network 
+
+Train network for predicing DC3 from O/N ratio and DP. Outputs are generated in `neural_network_results/*`. Parity plots are generated `dc3_parity.png` and performance metrics `metrics.json`. Model is saved in `dc3_network.keras`
+
+`python train_neural_network.py`
+
+Train network for predicting DC3 from O/N ratio, O2/O ratio, and DP. Outputs are generated in `neural_network_results_o2_o/*`.  Parity plots are generated `dc3_parity.png` and performance metrics `metrics.json`. Model is saved in `dc3_network.keras`.
+
+`python train_neural_network.py --`
+
+Hyper-parameters tuning for predicting DC3 from O/N ratio and DP. Outputs are generated in `neural_network_tining/*`
+
+`python tune_neural_network.py --two-inputs`
+
+Hyper-parameter tuning for predicting DC3 from O/N ratio, O2/O ratio, and DP. Outputs are generated in `neural_network_tuning_o2_o/*`
+
+`python tune_neural_network.py`
+
+Run k-fold cross-validation 
+`python cross_validate_networks.py`
+
+# 4. Plots 
+
+Plot k-fold cross validation errors and parity plots,
+`python plot_cross_validation.py`
+`python plot_dc3_parity.py`
+
+Plot DC3 Fig. 2a.
+`python plot_DC3_ON.py --no-show --no-colorbar`
+
+Plot DC3 Fig. 2b.
+`python plot_dc3_3d_surface.py`
+
+Plot Fig. 2c.
+Run prediction: `python predict_nc_1d_dc3.py ; python predict_nc_2d_dc3.py `
+
+Plot Fig. 3
+`python plot_combined_correlations.py`
+
