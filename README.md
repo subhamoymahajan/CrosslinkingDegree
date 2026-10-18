@@ -4,7 +4,7 @@ The data provided here are based on the following Manuscript: . Please cite the 
 
 # Predicting DC3
 
-Follow README in predictions/ folder, which has trained Feed-Forward Neural Networks needed for predictions. Data can be converted between different representations before predicting.
+Follow README in predictions/ folder, which has trained Feed-Forward Neural Networks needed for predictions. Data can be converted between different representations before predicting. The predictions are only valid for MPD-TMC membrane characteristics.
 
 # Reproducing the Results in the Manuscript
 
