@@ -52,3 +52,9 @@ preserved without clipping. If the input has no `DP` column, conversions add
 `DP=1`. An existing `DP` column is preserved unless `--dp VALUE` is supplied,
 which overrides DP for every row. The constant must be finite and between
 0 and 1. No inverse conversions are implemented.
+
+## Comparison with literature
+
+The experimental data provided in Section S8 of the supporting information: `exp_karan.csv` and `exp_monomers.csv`. 
+
+
