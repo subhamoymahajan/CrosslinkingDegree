@@ -55,6 +55,6 @@ which overrides DP for every row. The constant must be finite and between
 
 ## Comparison with literature
 
-The experimental data provided in Section S8 of the supporting information: `exp_karan.csv` and `exp_monomers.csv`. 
+The experimental data provided in Section S8 of the supporting information: `exp_karan.csv` and `exp_monomers.csv`. Corresponding predictions are provided in `results_karan_2D.csv`, results_monomer_2D.csv`. An intermediary file `output_monomer.csv` is needed to convert monomer ratios to O/N and O2/O. 
 
 
