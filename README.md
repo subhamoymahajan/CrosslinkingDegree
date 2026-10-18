@@ -1,6 +1,7 @@
 # 1. Extract Data
 
 `tar -xzvf Data.tar.gz`
+`NC*.csv` data files are based on supporting information of https://doi.org/10.1038/s41467-024-45918-4 please cite them.
 
 # 2. Analyze existing topology
 
