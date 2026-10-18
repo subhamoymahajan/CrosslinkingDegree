@@ -1,0 +1,29 @@
+{
+  "selection": "Lowest held-out fold RMSE per input family, matching existing NC prediction scripts",
+  "DP": "bond_fraction, on a 0 to 1 scale",
+  "models": {
+    "1D": {
+      "file": "FFNN_1D.keras",
+      "source": "neural_network_cross_validation/two_inputs_16_16/fold_08.keras",
+      "fold": 8,
+      "RMSE": 0.0222314181265862,
+      "inputs": [
+        "DP",
+        "O/N"
+      ],
+      "sha256": "2610f19e8a7106442d1b0d66c6ddf1271a84ce06fdd2b6fda83b96dd1cc892f0"
+    },
+    "2D": {
+      "file": "FFNN_2D.keras",
+      "source": "neural_network_cross_validation/three_inputs_64_16/fold_08.keras",
+      "fold": 8,
+      "RMSE": 0.0197481892555815,
+      "inputs": [
+        "DP",
+        "O/N",
+        "O2/O"
+      ],
+      "sha256": "fd9ad131464ee5785e72604972f4b6714cc3b9b0ce64e4d9f36a09544d7da35a"
+    }
+  }
+}
