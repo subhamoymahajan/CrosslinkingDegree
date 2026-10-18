@@ -41,7 +41,7 @@ python conversions.py song input.csv --columns 'C (%)' 'O (%)' 'N (%)' -o conver
 python predict_dc3.py converted.csv --model 2D -o predictions.csv
 ```
 
-Default input headers are `ftir,nmr`, `m1,m2,t1,t2,t3`, and `C,O,N`,
+Default input headers are `FTIR,NMR`, `M1,M2,T1,T2,T3`, and `C,O,N`,
 respectively. Use `--columns` to specify different headers in that order.
 FTIR/NMR inputs are dimensionless ratios; monomer populations must share a
 common scale; Song inputs are atomic amounts/fractions/percentages, not mass
