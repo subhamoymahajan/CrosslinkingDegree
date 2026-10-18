@@ -69,3 +69,7 @@ Run prediction: `python predict_nc_1d_dc3.py ; python predict_nc_2d_dc3.py `
 OR
 
 `python plot_ring_size_distribution.py Equilibrated_Rings/r1.5/clink_26_0.top`
+
+## 5. Equations 
+
+The supporting information equations can be verified using jupyter notebooks provided `Equations.ipynb`, which uses `sympy`. 
