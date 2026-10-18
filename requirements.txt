@@ -1,0 +1,8 @@
+# Direct dependencies used by the Python scripts; versions from conda env tfml.
+# Python 3.13.7
+matplotlib==3.10.9
+networkx==3.6.1
+numpy==2.4.4
+pandas==3.0.3
+scipy==1.17.1
+tensorflow==2.21.0
